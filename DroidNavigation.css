@@ -1,0 +1,148 @@
+
+        /*================= navigation tabs style ======
+===================================================================*/
+
+.droid-nav-item>*,
+.droid-nav-tab-container .droid-nav-tab {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#droid-sticky-navigation {
+    position: sticky;
+    top: 0px;
+    z-index: 12;
+    text-align: center;
+    pointer-events: none;
+}
+
+.droid-nav-tab-container {
+    font-size: 0.75em;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+    pointer-events: auto;
+    /* border-bottom: 2px solid lightgrey; */
+}
+
+.droid-nav-tab-container .droid-nav-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.droid-nav-tab.active,
+.droid-tabs-expanded .droid-nav-tab {
+    width: 150px;
+    text-align: center;
+}
+
+.droid-nav-tab {
+    width: 25px;
+    cursor: pointer;
+    margin: 0px 2px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    user-select: none;
+    color: #696969e6;
+    box-sizing: content-box;
+    transition: background-color 0.5s ease-in-out,
+                width 0.5s ease-in-out;
+}
+
+.droid-nav-tab-container i {
+    font-size: 1.5em;
+    margin-right: 4px;
+}
+
+.droid-nav-tab.active {
+    background: rgb(129, 129, 129);
+    color: white;
+}
+
+.droid-nav-item h4{
+    margin: 0;
+}
+.droid-nav-tab:not(.active):hover {
+    background: whitesmoke;
+}
+
+.droid-tabs-expanded .droid-nav-tab.active {
+    background: white;
+    color: #696969e6;
+}
+
+.droid-tabs-expanded .droid-nav-tab:hover {
+    background: whitesmoke;
+}
+
+
+
+@media(max-width:1320px) {
+    .droid-nav-tab {
+        padding: 5px;
+    }
+}
+@media(max-width:1170px) {
+    .droid-nav-tab {
+        padding: 5px;
+    }
+    .droid-nav-tab-container {
+        font-size: 0.65em;
+    }
+    .droid-tabs-expanded .droid-nav-tab{
+        width: 130px;
+    }
+}
+
+
+@media(max-width:1024px) {
+    .droid-nav-tab {
+        margin: 5px 0px 0px;
+        width: 25px;
+        padding: 4px;
+        color: dimgray;
+        font-size: 1.1em;
+        border-bottom: 0.5px solid rgb(240, 240, 240);
+    }
+
+    .droid-nav-tab.active {
+        width: 25px;
+    }
+
+    .droid-nav-tab:not(.active) {
+        border-radius: 0;
+    }
+
+    .droid-nav-tab-container i {
+        font-size: 1.3em;
+        margin-right: 4px;
+    }
+
+    .droid-nav-tab:last-child {
+        border: 0.5px solid transparent;
+    }
+
+    .droid-nav-tab-container {
+        font-size: 0.75em;
+        /* background: none; */
+        /* width: 0px; */
+        padding: 0px 2px 5px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+        border: none;
+    }
+
+    .droid-nav-tab-container .droid-nav-tab {
+        display: block;
+    }
+
+    #droid-sticky-navigation {
+        display: none;
+        position: fixed;
+        left: 0px;
+        z-index: 12;
+    }
+}
