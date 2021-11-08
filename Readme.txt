@@ -1,4 +1,4 @@
-<---- Docs for Droids Navigation addon --->
+<---- Document for Droids Navigation addon --->
 
 
 ==============================================================
